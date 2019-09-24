@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            height: 200px;
+        }
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        nav {
+            /*Uncomment to use flex*/
+            /*-webkit-flex: 1;*/
+            /*-ms-flex: 1;*/
+            /*flex: 1;*/
+            background: #ccc;
+            padding: 20px;
+            width: 200px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        table tbody, table thead
+        {
+            border-right: 1px solid #666;
+            display: block;
+        }
+
+        table tbody
+        {
+            border: 1px solid #666;
+            overflow: auto;
+            height: 100px;
+        }
+
+        table {
+            display: block;
+            border: 1px solid #666;
+        }
+
+        th {
+            border: 1px solid #666;
+            padding: 5px;
+            text-align: left;
+            background: #666;
+            color: #FFF;
+            width: 2%;
+        }
+
+        tr {
+            border: 1px solid #666;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            height: 100px;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Header</h2>
+</header>
+
+<section>
+    <nav>
+        <p>Navigation bar:</p>
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <div class="container">
+            <table>
+                <thead>
+                <tr class="header">
+                    <th>
+                        Table attribute name
+                    </th>
+                    <th>
+                        Value
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>align</td>
+                    <td>left, center, right</td>
+                    <td>Not supported in HTML5. Deprecated in HTML 4.01. Specifies the alignment of a table according to surrounding text</td>
+                </tr>
+                <tr>
+                    <td>bgcolor</td>
+                    <td>rgb(x,x,x), #xxxxxx, colorname</td>
+                    <td>Not supported in HTML5. Deprecated in HTML 4.01. Specifies the background color for a table</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>1,""</td>
+                    <td>Specifies whether the table cells should have borders or not</td>
+                </tr>
+                <tr>
+                    <td>cellpadding</td>
+                    <td>pixels</td>
+                    <td>Not supported in HTML5. Specifies the space between the cell wall and the cell content</td>
+                </tr>
+                <tr>
+                    <td>cellspacing</td>
+                    <td>pixels</td>
+                    <td>Not supported in HTML5. Specifies the space between cells</td>
+                </tr>
+                <tr>
+                    <td>frame</td>
+                    <td>void, above, below, hsides, lhs, rhs, vsides, box, border</td>
+                    <td>Not supported in HTML5. Specifies which parts of the outside borders that should be visible</td>
+                </tr>
+                <tr>
+                    <td>rules</td>
+                    <td>none, groups, rows, cols, all</td>
+                    <td>Not supported in HTML5. Specifies which parts of the inside borders that should be visible</td>
+                </tr>
+                <tr>
+                    <td>summary</td>
+                    <td>text</td>
+                    <td>Not supported in HTML5. Specifies a summary of the content of a table</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>pixels, %</td>
+                    <td>Not supported in HTML5. Specifies the width of a table</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+</section>
+
+<footer>
+    <h2>Footer</h2>
+</footer>
+
+</body>
+</html>
